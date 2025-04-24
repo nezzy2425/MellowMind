@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mellowmind/static/css/main.1bcf0c78.css",
+    "main.js": "/mellowmind/static/js/main.cb48a696.js",
+    "static/js/453.7528f7a8.chunk.js": "/mellowmind/static/js/453.7528f7a8.chunk.js",
+    "index.html": "/mellowmind/index.html",
+    "main.1bcf0c78.css.map": "/mellowmind/static/css/main.1bcf0c78.css.map",
+    "main.cb48a696.js.map": "/mellowmind/static/js/main.cb48a696.js.map",
+    "453.7528f7a8.chunk.js.map": "/mellowmind/static/js/453.7528f7a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bcf0c78.css",
+    "static/js/main.cb48a696.js"
+  ]
+}
