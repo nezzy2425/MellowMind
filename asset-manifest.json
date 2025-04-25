@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MellowMind/static/css/main.1bcf0c78.css",
-    "main.js": "/MellowMind/static/js/main.7c8c1107.js",
+    "main.css": "/MellowMind/static/css/main.006695ac.css",
+    "main.js": "/MellowMind/static/js/main.1d952baf.js",
     "static/js/453.7528f7a8.chunk.js": "/MellowMind/static/js/453.7528f7a8.chunk.js",
     "index.html": "/MellowMind/index.html",
-    "main.1bcf0c78.css.map": "/MellowMind/static/css/main.1bcf0c78.css.map",
-    "main.7c8c1107.js.map": "/MellowMind/static/js/main.7c8c1107.js.map",
+    "main.006695ac.css.map": "/MellowMind/static/css/main.006695ac.css.map",
+    "main.1d952baf.js.map": "/MellowMind/static/js/main.1d952baf.js.map",
     "453.7528f7a8.chunk.js.map": "/MellowMind/static/js/453.7528f7a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bcf0c78.css",
-    "static/js/main.7c8c1107.js"
+    "static/css/main.006695ac.css",
+    "static/js/main.1d952baf.js"
   ]
 }
