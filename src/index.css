@@ -1,13 +1,182 @@
+/* Apply a baby pink background */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #FFC0CB; /* Baby pink */
+  color: #4B0082; /* Dark purple for general text */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style for bold headings */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4B0082; /* Dark purple */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin-top: 20px; /* Add spacing to prevent cutoff */
 }
+
+/* Style for paragraphs (text content) */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #4B0082; /* Dark purple for text */
+}
+
+/* Style for links */
+a {
+  color: #800080; /* Purple */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect to links */
+a:hover {
+  color: #4B0082; /* Darker purple on hover */
+}
+
+/* Style for buttons */
+button {
+  background-color: #800080; /* Purple background */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; /* Space buttons below content */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #4B0082; /* Dark purple on hover */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+/* Add spacing for the title */
+.header {
+  margin-top: 40px; /* Ensures title isn’t cut off */
+}
+/* Header container to align emoji and title */
+.header {
+  display: flex;
+  align-items: center; /* Align emoji and text vertically */
+  justify-content: center; /* Center everything horizontally */
+  gap: 10px; /* Adds space between emoji and title */
+  margin-top: 40px; /* Prevents cutoff */
+}
+
+/* Style for the brain emoji */
+.brain-emoji {
+  font-size: 2.5rem; /* Same size as the title */
+}
+/* Footer styling */
+.footer {
+  text-align: center;
+  margin-top: 50px; /* Adds space above the footer */
+  padding: 20px 0; /* Adds spacing inside the footer */
+  font-size: 1rem;
+  color: #5a287d; /* Dark purple for consistency */
+}
+/* Adjust button spacing */
+button {
+  margin: 10px; /* Adds space around each button */
+  padding: 12px 20px; /* Makes buttons more balanced */
+  font-size: 1rem;
+}
+/* Bold Headings - Dark Purple */
+h1, h2, h3, h4, h5, h6 {
+  color: #4B0082; /* Dark Purple */
+}
+
+/* Regular Paragraph Text - Lighter Purple */
+p, span, li, div {
+  color: #9370DB; /* Lighter Purple */
+}
+.journal-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adjust the gap for vertical spacing between each input */
+}
+
+.journal-tab input,
+.journal-tab select {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px; /* Keeps inputs from stretching too wide */
+}
+
+.journal-tab button {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+/* Targeting the input fields for search, mood, and date */
+input[type="text"], input[type="date"], select {
+  margin-bottom: 20px; /* Adjust this value for more/less spacing */
+  width: 100%; /* Ensures the input fields take up full width */
+}
+.emoji-fall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+.emoji:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; }
+.emoji:nth-child(2) { left: 15%; animation-duration: 13s; animation-delay: 2s; }
+.emoji:nth-child(3) { left: 25%; animation-duration: 11s; animation-delay: 4s; }
+.emoji:nth-child(4) { left: 35%; animation-duration: 14s; animation-delay: 1s; }
+.emoji:nth-child(5) { left: 45%; animation-duration: 12s; animation-delay: 3s; }
+.emoji:nth-child(6) { left: 55%; animation-duration: 10.5s; animation-delay: 0.5s; }
+.emoji:nth-child(7) { left: 65%; animation-duration: 13.5s; animation-delay: 2.5s; }
+.emoji:nth-child(8) { left: 75%; animation-duration: 12s; animation-delay: 4.5s; }
+.emoji:nth-child(9) { left: 85%; animation-duration: 11.5s; animation-delay: 1.5s; }
+.emoji:nth-child(10) { left: 92%; animation-duration: 13s; animation-delay: 3.5s; }
+.emoji:nth-child(11) { left: 33%; animation-duration: 15s; animation-delay: 5s; }
+.emoji:nth-child(12) { left: 67%; animation-duration: 14.5s; animation-delay: 6s; }
